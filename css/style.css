@@ -822,6 +822,7 @@ h6{
 
 .dis-bottom .price{
   color: #0078E9;
+  font-size: 20px;
 }
 
 .fa-heart{
@@ -1043,7 +1044,7 @@ input.quantity{
   color: #818181;
 }
 .pd-img{
-  width: 120px;
+  width: 100%;
 }
 .pd-img img{
   width: 100%;
