@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Woo!3Cshop</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -13,24 +13,51 @@
 
 <body>
 
+    <!-- facebook start -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=108665585847484&autoLogAppEvents=1"
         nonce="wjK2PB5p"></script>
+    <div>
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="306243739789179">
+      </div>
+    </div>
+    <!-- facebook end -->
 
     <div class="header">
         <nav class="container">
             <div class="nav-left">
                 <div class="nav-logo">
-                    <a href=""><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
+                    <a href="#"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
                 </div>
                 <div class="menu">
                     <ul>
                         <li><a href="#">iPhone配件</a> </li>
                         <li><a href="#">Macbook周邊</a></li>
-                        <li><a href="">其他周邊</a></li>
-                        <li><a href="">購物說明</a> </li>
-                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="#">其他周邊</a></li>
+                        <li><a href="#">購物說明</a> </li>
+                        <li><a href="#">聯絡我們</a></li>
                     </ul>
                 </div>
 
@@ -39,8 +66,8 @@
                 <ul>
                     <li><input class="search" type="search" placeholder="商品搜尋..."></li>
                     <li class="cart"><a href="#"><img src="img/shopping_cart-24px.svg" alt=""></a> </li>
-                    <li class="login"><a href="">登入</a> </li>
-                    <li> <a href="#" class="sign-btn">註冊</a> </button></li>
+                    <li class="login"><a href="#">登入</a> </li>
+                    <li class="sign"> <a href="#" class="sign-btn">註冊</a> </button></li>
                 </ul>
             </div>
         </nav>
@@ -66,7 +93,7 @@
     </div>
 
     <section>
-        <div class="container">
+        <div class="container ptb-20">
             <!-- iphone -->
             <div class="pd-row p-15">
                 <div class="pd-h2-l">
@@ -74,7 +101,7 @@
                     <h2>iPhone周邊</h2>
                 </div>
                 <div class="pd-h2-r"></div>
-                <a href="" class="pd-more">更多商品</a>
+                <a href="#" class="pd-more">更多商品</a>
             </div>
 
             <div class="pd-row">
@@ -114,7 +141,7 @@
                     <h2>Macbook周邊</h2>
                 </div>
                 <div class="pd-h2-r"></div>
-                <a href="" class="pd-more">更多商品</a>
+                <a href="#" class="pd-more">更多商品</a>
             </div>
 
             <div class="pd-row">
@@ -187,26 +214,29 @@
                     <h2>熱門影片</h2>
                 </div>
                 <div class="pd-h2-r"></div>
-                <a href="" class="pd-more">更多商品</a>
+                <a href="#" class="pd-more">更多商品</a>
             </div>
 
             <div class="pd-row">
                 <div class="pd-video-item-g">
                     <div class="pd-video-item">
-                        <img src="img/yt01.jpg" alt="">
+                        <iframe width="370" height="230" src="https://www.youtube.com/embed/utAl_K1xIyc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="pd-video-item">
-                        <img src="img/yt01.jpg" alt="">
+                        <iframe width="370" height="230" src="https://www.youtube.com/embed/HPrkrS6XhuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="pd-video-item">
-                        <img src="img/yt01.jpg" alt="">
+                        <iframe width="370" height="230" src="https://www.youtube.com/embed/6L09ZbgxWW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class=" m-60">
+    <footer class=" mt-90">
         <div class="container row p-15 pt-60">
             <div class="info-logo">
                 <img src="img/logo-w.svg" alt="">
@@ -223,24 +253,24 @@
             <div class="info">
                 <p class="p-title">關於我們</p>
                 <ul>
-                    <li>商店簡介</li>
-                    <li>隱私權條款</li>
+                    <li><a href="#">商店簡介</a> </li>
+                    <li><a href="#">隱私權條款</a> </li>
                 </ul>
                 <p class="p-title">購物說明</p>
                 <ul>
-                    <li>付費方式</li>
-                    <li>運送方式</li>
-                    <li>退換貨方式</li>
+                    <li><a href="#">付費方式</a> </li>
+                    <li><a href="#">運送方式</a> </li>
+                    <li><a href="#">退換貨方式</a> </li>
                 </ul>
             </div>
 
 
             <div class="info">
-                
+
                 <p class="p-title">客服資訊</p>
                 <ul>
-                    <li>常見問題</li>
-                    <li>會員權益</li>
+                    <li><a href="#">常見問題</a> </li>
+                    <li><a href="#">會員權益</a> </li>
                 </ul>
 
             </div>
