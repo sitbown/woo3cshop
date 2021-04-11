@@ -1050,7 +1050,9 @@ input.quantity{
 .pd-img img{
   width: 100%;
 }
-
+.card-pd-img{
+  width: 100%;
+}
 .item-cart-detail-g span{
   font-size: 14px;
   color: #818181;
