@@ -996,6 +996,7 @@ input.quantity{
   width: 960px;
   margin: auto;
 }
+
 .step1-img img{
   width: 100%;
 }
@@ -1044,7 +1045,7 @@ input.quantity{
   color: #818181;
 }
 .pd-img{
-  width: 100%;
+  width: 120px;
 }
 .pd-img img{
   width: 100%;
