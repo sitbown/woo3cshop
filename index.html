@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/884c415745.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
-
     <!-- facebook start -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
@@ -21,28 +20,26 @@
         nonce="wjK2PB5p"></script>
     <div>
         <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v10.0'
+                });
+            };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="306243739789179">
-      </div>
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution="setup_tool" page_id="306243739789179">
+        </div>
     </div>
     <!-- facebook end -->
 
@@ -50,15 +47,26 @@
         <nav class="container">
             <div class="nav-left">
                 <div class="nav-logo">
-                    <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
+                    <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png"
+                            data-reactid="29"></a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="production-list.html">iPhone配件</a> </li>
-                        <li><a href="production-list.html">Macbook周邊</a></li>
-                        <li><a href="production-list.html">其他周邊</a></li>
-                        <li><a href="shipping.html">購物說明</a> </li>
-                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li>
+                            <a href="product-list.html">iPhone配件</a>
+                        </li>
+                        <li>
+                            <a href="product-list.html">Macbook周邊</a>
+                        </li>
+                        <li>
+                            <a href="product-list.html">其他周邊</a>
+                        </li>
+                        <li>
+                            <a href="shipping.html">購物說明</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">聯絡我們</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -74,8 +82,27 @@
         </nav>
 
     </div>
-    <div class="banner">
-        <img src="img/banner01.jpg" alt="">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/banner01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner02.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+
     </div>
     <div class="news">
         <div class="container news-g">
@@ -85,10 +112,18 @@
     </div>
     <div class="container banner-promo">
         <div class="promo-g">
-            <div class="promo"> <img src="img/promo01.jpg" alt=""> </div>
-            <div class="promo"> <img src="img/promo02.jpg" alt=""> </div>
-            <div class="promo"> <img src="img/promo01.jpg" alt=""> </div>
-            <div class="promo"> <img src="img/promo02.jpg" alt=""> </div>
+            <div class="promo">
+                <img src="img/promo01.jpg" alt="">
+            </div>
+            <div class="promo">
+                <img src="img/promo02.jpg" alt="">
+            </div>
+            <div class="promo">
+                <img src="img/promo01.jpg" alt="">
+            </div>
+            <div class="promo">
+                <img src="img/promo02.jpg" alt="">
+            </div>
         </div>
     </div>
 
@@ -189,16 +224,36 @@
                 </div>
             </div>
             <div class="pd-row pd-tab-item-g">
-                <div class="pd-tab-item"><img src="img/earpod01.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod02.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod03.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod04.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/earpod01.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod02.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod03.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod04.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/earpod01.jpg" alt=""></div>
-                <div class="pd-tab-item"><img src="img/airpod02.jpg" alt=""></div>
+                <div class="pd-tab-item">
+                    <img src="img/earpod01.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod02.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod03.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod04.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/earpod01.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod02.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod03.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod04.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/earpod01.jpg" alt="">
+                </div>
+                <div class="pd-tab-item">
+                    <img src="img/airpod02.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -224,10 +279,16 @@
                             allowfullscreen></iframe>
                     </div>
                     <div class="pd-video-item">
-                        <iframe width="370" height="230" src="https://www.youtube.com/embed/HPrkrS6XhuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="370" height="230" src="https://www.youtube.com/embed/HPrkrS6XhuM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="pd-video-item">
-                        <iframe width="370" height="230" src="https://www.youtube.com/embed/6L09ZbgxWW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="370" height="230" src="https://www.youtube.com/embed/6L09ZbgxWW8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -306,7 +367,31 @@
     </footer>
 
 
+    <!-- banner -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            speed: 1000,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            effect: 'slide',
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
 </body>
 
 </html>
