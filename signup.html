@@ -13,6 +13,28 @@
 </head>
 
 <body>
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="101678745398906">
+    </div>
 
     <!-- facebook start -->
     <div id="fb-root"></div>
@@ -48,7 +70,8 @@
         <nav class="container">
             <div class="nav-left">
                 <div class="nav-logo">
-                    <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
+                    <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png"
+                            data-reactid="29"></a>
                 </div>
                 <div class="menu">
                     <ul>
@@ -80,41 +103,41 @@
     </nav>
 
     <div class="signupform">
-        
-            <div class="signup-btn-g">
-                <div class="signup-btn">註冊會員</div>
-                <div class="login-btn">登入會員 </div>
+
+        <div class="signup-btn-g">
+            <div class="signup-btn">註冊會員</div>
+            <div class="login-btn">登入會員 </div>
+        </div>
+        <form class="sign" action="">
+            <div class="input-email-g">
+                <label for="mail">Email</label>
+                <input id="mail" type="text" placeholder="hellowold@mail.com">
             </div>
-            <form class="sign" action="">
-                <div class="input-email-g">
-                    <label for="mail">Email</label>
-                    <input id="mail" type="text"  placeholder="hellowold@mail.com">
-                </div>
 
-                <div class="input-password-g">
-                    <label for="pwd">密碼設定</label>
-                    <input id="pwd" type="password"  name="pwd" placeholder="至少八個字元">
-                </div>
+            <div class="input-password-g">
+                <label for="pwd">密碼設定</label>
+                <input id="pwd" type="password" name="pwd" placeholder="至少八個字元">
+            </div>
 
-                <div class="input-password-g">
-                    <label for="again-pwd">再次輸入密碼</label>
-                    <input id="again-pwd" type="password" id="pwd" name="pwd" placeholder="再次輸入密碼">
+            <div class="input-password-g">
+                <label for="again-pwd">再次輸入密碼</label>
+                <input id="again-pwd" type="password" id="pwd" name="pwd" placeholder="再次輸入密碼">
 
-                </div>
+            </div>
 
-                <input class="checkbox" type="checkbox" name="vehicle1" value="Bike">
-                <label class="check" for="vehicle1"> 我同意網站服務條款及隱私政策</label><br>
+            <input class="checkbox" type="checkbox" name="vehicle1" value="Bike">
+            <label class="check" for="vehicle1"> 我同意網站服務條款及隱私政策</label><br>
 
-                <!-- <input class="check" type="checkbox" name="" id="">
+            <!-- <input class="check" type="checkbox" name="" id="">
                 <span class="agree">
                     我同意網站服務條款及隱私政策
                 </span> -->
-                
-                <input class="submit" type="submit" value="確 認">
+
+            <input class="submit" type="submit" value="確 認">
 
 
-            </form>
-        
+        </form>
+
     </div>
 
 

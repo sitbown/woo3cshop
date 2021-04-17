@@ -14,6 +14,28 @@
 </head>
 
 <body>
+  <!-- Messenger 洽談外掛程式 Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your 洽談外掛程式 code -->
+  <div class="fb-customerchat" attribution="page_inbox" page_id="101678745398906">
+  </div>
 
   <!-- facebook start -->
   <div id="fb-root"></div>
@@ -53,13 +75,13 @@
         </div>
         <div class="menu">
           <ul>
-              <li><a href="product-list.html">iPhone配件</a> </li>
-              <li><a href="product-list.html">Macbook周邊</a></li>
-              <li><a href="product-list.html">其他周邊</a></li>
-              <li><a href="shipping.html">購物說明</a> </li>
-              <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="product-list.html">iPhone配件</a> </li>
+            <li><a href="product-list.html">Macbook周邊</a></li>
+            <li><a href="product-list.html">其他周邊</a></li>
+            <li><a href="shipping.html">購物說明</a> </li>
+            <li><a href="contact.html">聯絡我們</a></li>
           </ul>
-      </div>
+        </div>
 
       </div>
       <div class="nav-right">

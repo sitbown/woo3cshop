@@ -858,6 +858,12 @@ h6{
 
 /* 商品敘述頁 */
 
+.pd-detail-g{
+  width: 75%;
+}
+
+
+
 .pd-g{
   display: flex;
   flex-wrap: wrap;
