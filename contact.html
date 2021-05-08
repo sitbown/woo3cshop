@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Woo!3Cshop</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/884c415745.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style-mod.css">
+
 
 
 </head>
@@ -36,6 +39,7 @@
   <!-- Your 洽談外掛程式 code -->
   <div class="fb-customerchat" attribution="page_inbox" page_id="101678745398906">
   </div>
+
 
   <!-- facebook start -->
   <div id="fb-root"></div>
@@ -67,39 +71,92 @@
   </div>
   <!-- facebook end -->
 
-  <div class="header">
-    <nav class="container">
-      <div class="nav-left">
+
+  <header>
+    <div class="container">
+      <input type="checkbox" name="" id="check">
+
+      <div class="logo-container">
         <div class="nav-logo">
           <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
         </div>
-        <div class="menu">
+
+      </div>
+
+      <div class="nav-btn">
+        <div class="nav-links">
           <ul>
-            <li><a href="product-list.html">iPhone配件</a> </li>
-            <li><a href="product-list.html">Macbook周邊</a></li>
-            <li><a href="product-list.html">其他周邊</a></li>
-            <li><a href="shipping.html">購物說明</a> </li>
-            <li><a href="contact.html">聯絡我們</a></li>
+            <li class="nav-link" style="--i: .6s">
+              <a href="#">
+                iPhone配件<i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">傳輸線</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">行動電源</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">手機殼</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">螢幕保護貼</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-link" style="--i: .85s">
+              <a href="#">
+                Macbook周邊
+              </a>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">其他周邊</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="#">購物說明</a>
+            </li>
+            <!-- <li class="nav-link" style="--i: 1.35s">
+              <a href="#">聯絡我們</a>
+            </li> -->
           </ul>
         </div>
 
+        <div class="log-sign" style="--i: 1.8s">
+          <ul>
+            <li><input class="search" type="search" placeholder="商品搜尋..."></li>
+            <li class="cart">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="btn transparent">登入</a>
+          <a href="#" class="btn-b solid">註冊</a>
+        </div>
       </div>
-      <div class="nav-right">
-        <ul>
-          <li><input class="search" type="search" placeholder="商品搜尋..."></li>
-          <li class="cart"><a href="#"><img src="img/shopping_cart-24px.svg" alt=""></a> </li>
-          <li class="login"><a href="login.html">登入</a> </li>
-          <li class="sign"> <a href="signup.html" class="sign-btn">註冊</a> </button></li>
-        </ul>
-      </div>
-    </nav>
 
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <ul>
+        <a href="index.html">首頁</a>
+        <i class="fas fa-angle-right"></i>
+        <a href="#">聯絡我們</a>
+
+      </ul>
+    </div>
   </div>
-  <nav class="container breadcrumb">
-    <span>首頁</span>
-    <i class="fas fa-angle-right"></i>
-    <span class="bread-link">聯絡我們</span>
-  </nav>
 
   <div class="container">
 
@@ -116,17 +173,22 @@
 
         <form action="" class="contactForm">
           <h2>留言給我們</h2>
-          <label for="name">姓 名*</label>
+          <hr>
+          <label for="name">姓 名*</label><br>
           <input id="name" type="text" name="Name" placeholder="請留下您的大名">
-          <label for="mail">Email*</label>
+          <hr>
+          <label for="mail">Email*</label><br>
           <input id="mail" type="text" placeholder="hellowold@mail.com">
-          <label for="texteara">留 言*</label>
+          <hr>
+          <label for="texteara">留 言*</label><br>
           <textarea name="" id="texteara" cols="30" rows="10"></textarea>
-          <input class="submit" type="submit" value="送出">
+          <hr>
+          <input class="submit btn-b" type="submit" value="送出">
         </form>
 
         <div class="company-info">
           <h2>公司資訊</h2>
+          <hr>
           <div class="add">
             <i class="fas fa-map-marker-alt"></i>
             <p>
@@ -155,66 +217,105 @@
     </div>
   </div>
 
-
-  <footer class=" mt-90">
-    <div class="container row p-15 pt-60">
-      <div class="info-logo">
-        <img src="img/logo-w.svg" alt="">
-        <li>Woo 提供最優質的3C產品,<br>
-          給客戶最好的產品體驗</li>
-        <li>9F., No. 46, Fuxing Rd., Zhongli Dist., <br>
-          Taoyuan City 320061, Taiwan (R.O.C.)</li>
-        <li>+88634251108</li>
-        <li>woo3cshop@gmail.com</li>
-        <li>woo3cshop.com</li>
-
-
-      </div>
-      <div class="info">
-        <p class="p-title">關於我們</p>
-        <ul>
-          <li><a href="about.html">商店簡介</a> </li>
-          <li><a href="#">隱私權條款</a> </li>
-        </ul>
-        <p class="p-title">購物說明</p>
-        <ul>
-          <li><a href="#">付費方式</a> </li>
-          <li><a href="#">運送方式</a> </li>
-          <li><a href="#">退換貨方式</a> </li>
-        </ul>
-      </div>
-
-
-      <div class="info">
-
-        <p class="p-title">客服資訊</p>
-        <ul>
-          <li><a href="#">常見問題</a> </li>
-          <li><a href="#">會員權益</a> </li>
-        </ul>
-
-      </div>
-
-      <div class="info-fb">
-        <p class="p-title">Facebook粉絲團</p>
-        <div class="fb-page" data-href="https://www.facebook.com/Woo-3C-Shop-101678745398906" data-tabs="timeline"
-          data-width="220" data-height="190" data-small-header="true" data-adapt-container-width="true"
-          data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/Woo-3C-Shop-101678745398906" class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/Woo-3C-Shop-101678745398906">ZEN UIUX</a></blockquote>
-        </div>
-
-      </div>
-
-      <div class="info-line">
-        <p class="p-title">LINE粉絲圈</p>
-        <div class="line">
-          <img src="img/line-card.jpg" alt="">
+  <footer>
+    <div class="container footer-row">
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info">
+          <div class="info-logo">
+            <img src="img/logo-w.svg" alt="">
+          </div>
+          <ul>
+            <li>Woo 3C Shop提供最優質的3C產品, <br>
+              給客戶最好的產品體驗</li>
+          </ul>
+          <div class="address">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>
+              9F., No. 46, Fuxing Rd., Zhongli Dist.,<br>
+              Taoyuan City 320061, Taiwan (R.O.C.)
+            </span>
+          </div>
+          <div class="tel">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+            <span>
+              +886 - 903196184
+            </span>
+          </div>
+          <div class="email">
+            <i class="far fa-envelope" aria-hidden="true"></i>
+            <span>
+              woo3cshop@gmail.com
+            </span>
+          </div>
+          <div class="web">
+            <i class="fas fa-globe-asia" aria-hidden="true"></i>
+            <span>
+              woo3cshop.com
+            </span>
+          </div>
         </div>
       </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">關於我們</p>
+            <ul>
+              <li><a href="about.html">商店簡介</a> </li>
+              <li><a href="#">隱私權條款</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <!-- <div class="info-sitmap-about">
+            <p class="p-title">關於我們</p>
+            <ul>
+              <li><a href="about.html">商店簡介</a> </li>
+              <li><a href="#">隱私權條款</a> </li>
+            </ul>
+          </div> -->
+          <div class="info-sitmap-shipping">
+            <p class="p-title">購物說明</p>
+            <ul>
+              <li><a href="#">付費方式</a> </li>
+              <li><a href="#">運送方式</a> </li>
+              <li><a href="#">退換貨方式</a> </li>
+              <li><a href="#">常見問題</a> </li>
+              <li><a href="#">會員權益</a> </li>
+            </ul>
+          </div>
 
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">FACEBOOK粉絲頁</p>
+            <div class="fb-page" data-href="https://www.facebook.com/Woo-3C-Shop-101678745398906" data-tabs="timeline"
+              data-width="220" data-height="190" data-small-header="true" data-adapt-container-width="true"
+              data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Woo-3C-Shop-101678745398906" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/Woo-3C-Shop-101678745398906">ZEN UIUX</a></blockquote>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">LIND粉絲團</p>
+            <div class="line">
+              <img src="img/line-card.jpg" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
-    <div class="container row copyright">
+    <div class="container copyright">
       <div class="text">
         <p>Copyright 2021 WiEdu Co. ,Ltd.
           All rights reserved</p>
@@ -225,10 +326,10 @@
 
     </div>
 
+
+
+
   </footer>
-
-
-
 </body>
 
 </html>

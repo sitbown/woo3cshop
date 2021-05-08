@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Woo!3Cshop</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/884c415745.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style-mod.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <script src="https://storage.googleapis.com/prshim/v1/payment-shim.js"></script>
 
 </head>
 
@@ -35,6 +39,7 @@
   <!-- Your 洽談外掛程式 code -->
   <div class="fb-customerchat" attribution="page_inbox" page_id="101678745398906">
   </div>
+
 
   <!-- facebook start -->
   <div id="fb-root"></div>
@@ -66,321 +71,511 @@
   </div>
   <!-- facebook end -->
 
-  <div class="header">
-    <nav class="container">
-      <div class="nav-left">
+
+  <header>
+    <div class="container">
+      <input type="checkbox" name="" id="check">
+
+      <div class="logo-container">
         <div class="nav-logo">
           <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
         </div>
-        <div class="menu">
+
+      </div>
+
+      <div class="nav-btn">
+        <div class="nav-links">
           <ul>
-            <li>
-              <a href="product-list.html">iPhone配件</a>
+            <li class="nav-link" style="--i: .6s">
+              <a href="#">
+                iPhone配件<i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">傳輸線</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">行動電源</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">手機殼</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">螢幕保護貼</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="product-list.html">Macbook周邊</a>
+            <li class="nav-link" style="--i: .85s">
+              <a href="#">
+                Macbook周邊
+              </a>
             </li>
-            <li>
-              <a href="product-list.html">其他周邊</a>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">其他周邊</a>
             </li>
-            <li>
-              <a href="shipping.html">購物說明</a>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="#">購物說明</a>
             </li>
-            <li>
-              <a href="contact.html">聯絡我們</a>
-            </li>
+            <!-- <li class="nav-link" style="--i: 1.35s">
+              <a href="#">聯絡我們</a>
+            </li> -->
           </ul>
         </div>
 
-      </div>
-      <div class="nav-right">
-        <ul>
-          <li>
-            <input class="search" type="search" placeholder="商品搜尋...">
-          </li>
-          <li class="cart">
-            <a href="#"><img src="img/shopping_cart-24px.svg" alt=""></a>
-          </li>
-          <li class="login"><a href="login.html">登入</a> </li>
-          <li class="sign"> <a href="signup.html" class="sign-btn">註冊</a> </button></li>
-        </ul>
-      </div>
-    </nav>
-
-  </div>
-
-  <nav class="container breadcrumb">
-    <span>首頁</span>
-    <i class="fas fa-angle-right"></i>
-    <span>iPhone配件</span>
-    <i class="fas fa-angle-right"></i>
-    <span class="bread-link">防摔保護殼</span>
-  </nav>
-
-  <div class="container product-list">
-    <div class="left-bar-g">
-      <div class="left-bar">
-        <div class="dropdown-list">
-          <span class="show-all-dropdown">
-            iPhone配件
-            <i class="fa fa-angle-up"></i>
-          </span>
+        <div class="log-sign" style="--i: 1.8s">
           <ul>
-            <li class="">
-              <a href="">
-                <span class="no-child" style="color: #3DA1FF;">防摔保護殼</span>
-                </span>
-              </a>
-            </li>
-            <li class="">
-              <a href="">
-                <span class="no-child">充電/傳輸線/放置架</span>
-                </span>
-              </a>
-            </li>
-            <li class="">
-              <a href="">
-                <span class="no-child">藍芽喇叭音響/耳機</span>
-                </span>
+            <li><input class="search" type="search" placeholder="商品搜尋..."></li>
+            <li class="cart">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
               </a>
             </li>
           </ul>
-        </div>
-
-        <div class="dropdown-list">
-          <span class="show-all-dropdown">
-            Macbook周邊商品
-            <i class="fas fa-angle-down"></i>
-          </span>
-        </div>
-        <div class="dropdown-list">
-          <span class="show-all-dropdown">
-            其他周邊
-            <i class="fas fa-angle-down"></i>
-          </span>
+          <a href="#" class="btn transparent">登入</a>
+          <a href="#" class="btn-b solid">註冊</a>
         </div>
       </div>
 
-    </div>
-
-    <div class="pd-detail-g">
-      <div class="pd-g">
-        <div class="pd-img-g">
-          <div class="pd-img-big">
-            <img src="img/pd-iphone-1-1.jpg" alt="">
-          </div>
-          <div class="pd-img-sm-g">
-            <div class="pd-img-sm">
-              <img src="img/pd-iphone-1-5.jpg" alt="">
-            </div>
-            <div class="pd-img-sm">
-              <img src="img/pd-iphone-1-2.jpg" alt="">
-            </div>
-            <div class="pd-img-sm">
-              <img src="img/pd-iphone-1-3.jpg" alt="">
-            </div>
-            <div class="pd-img-sm">
-              <img src="img/pd-iphone-1-4.jpg" alt="">
-            </div>
-          </div>
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
         </div>
-        <div class="pd-dis-g">
-          <h1>CATALYST for iPhone12 Pro Max (3顆鏡頭) 完美四合一防水保護殼</h1>
-          <div class="pd-star">
-            <img src="img/star4.svg" alt="">
-          </div>
-          <nav>
-            <div class="li-g">
-              <div class="li">
-                <dot> • </dot>
-                <p>
-                  防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）
-                </p>
-              </div>
-            </div>
-            <div class="li-g">
-              <div class="li">
-                <dot> • </dot>
-                <p>
-                  設計達到或超過MIL-STD 810G的跌落和衝擊
-                </p>
-              </div>
-            </div>
-            <div class="li-g">
-              <div class="li">
-                <dot> • </dot>
-                <p>
-                  使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護
-                </p>
-              </div>
-            </div>
-            <div class="li-g">
-              <div class="li">
-                <dot> • </dot>
-                <p>
-                  專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉
-                </p>
-              </div>
-            </div>
+      </div>
+    </div>
+  </header>
 
-          </nav>
-          <div class="pd-dis-g-price">
-            <span class="price">金額</span>$ 390
-          </div>
-          <form action="">
-            <div class="pd-quantity">
-              <div class="a-center">
-                <span class="quantity">
-                  數量
-                </span>
-              </div>
+  <div class="container">
+    <div class="breadcrumb">
+      <ul>
+        <a href="index.html">首頁</a>
+        <i class="fas fa-angle-right"></i>
+        <a href="#">產品介紹</a>
 
-              <div>
-                <input class="quantity-input" type="number" value="1">
-              </div>
-            </div>
-            <div class="cart-btn-g">
-              <div class="cart-add">
-                <div class="cart-add-btn">
-                  <i style="padding: 0;" class="fas fa-shopping-cart"></i><a href="#">購物車</a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="product-list-row">
+      <div class="sidebar-pd-g">
+        <div class="sidebar-pd-filter">
+          <div class="dropdown-list">
+            <span class="show-all-dropdown">
+              iPhone配件
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </span>
+            <ul>
+              <li class="">
+                <a href="">
+                  <span class="no-child" style="color: #3DA1FF;">防摔保護殼</span>
+
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <span class="no-child">充電/傳輸線/放置架</span>
+
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <span class="no-child">藍芽喇叭音響/耳機</span>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-list">
+            <span class="show-all-dropdown">
+              Macbook周邊商品
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="dropdown-list">
+            <span class="show-all-dropdown">
+              其他周邊
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </div>
+
+        </div>
+        <div class="sidebar-pd-filter">
+          <div class="dropdown-list">
+            <!-- <span class="show-all-dropdown">
+              iPhone配件
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </span>
+            <ul>
+              <li class="">
+                <a href="">
+                  <span class="no-child" style="color: #3DA1FF;">防摔保護殼</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <span class="no-child">充電/傳輸線/放置架</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <span class="no-child">藍芽喇叭音響/耳機</span>
+                </a>
+              </li>
+            </ul> -->
+            <select class="sidebar-select">
+              <option value="">熱門商品</option>
+              <option value="">iPhone配件</option>
+              <option value="">Macbook周邊商品</option>
+            </select>
+            <form action="" class="sidebar-checkbox-g">
+              <input class="checkbox" type="checkbox" name="iphone" value="">
+              <label class="check" for="iphone"> iPhone配件</label><br>
+
+              <input class="checkbox" type="checkbox" name="mackbook" value="">
+              <label class="check" for="mackbook"> Macbook周邊商品</label><br>
+
+              <input class="checkbox" type="checkbox" name="other" value="">
+              <label class="check" for="other"> 其他配件</label><br>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="product-detail-row">
+        <div class="product-detail-content">
+          <div class="product-detail-g">
+            <div class="product-detail-img">
+              <div class="product-img-g">
+                <div class="mySlides">
+                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%"
+                      onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%"
+                      onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%"
+                      onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%"
+                      onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+
                 </div>
               </div>
-              <div class="cart-buy">
-                <div class="cart-buy-btn">
-                  <a href="cart.html">結帳</a>
+
+              <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) { slideIndex = 1 }
+                  if (n < 1) { slideIndex = slides.length }
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+              </script>
+              <!-- <div class="pd-img-g">
+                <div class="pd-img-big">
+                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" alt="">
                 </div>
+                <div class="pd-img-sm-g">
+                  <div class="pd-img-sm">
+                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
+                  </div>
+                  <div class="pd-img-sm">
+                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
+                  </div>
+                  <div class="pd-img-sm">
+                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
+                  </div>
+                  <div class="pd-img-sm">
+                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
+                  </div>
+                </div>
+                
+              </div> -->
+            </div>
+
+            <div class="product-detail-desc">
+              <h1>CATALYST for iPhone12 Pro Max (3顆鏡頭) 完美四合一防水保護殼</h1>
+              <div class="pd-star">
+                <img src="img/star4.svg" alt="">
+              </div>
+              <br>
+              <nav>
+                <div class="li-g">
+                  <div class="li">
+                    <dot> • </dot>
+                    <p>
+                      防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）
+                    </p>
+                  </div>
+                </div>
+                <div class="li-g">
+                  <div class="li">
+                    <dot> • </dot>
+                    <p>
+                      設計達到或超過MIL-STD 810G的跌落和衝擊
+                    </p>
+                  </div>
+                </div>
+                <div class="li-g">
+                  <div class="li">
+                    <dot> • </dot>
+                    <p>
+                      使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護
+                    </p>
+                  </div>
+                </div>
+                <div class="li-g">
+                  <div class="li">
+                    <dot> • </dot>
+                    <p>
+                      專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉
+                    </p>
+                  </div>
+                </div>
+
+              </nav>
+              <div class="pd-dis-g-price">
+                <span class="price">金額</span>
+                <p>$ 390</p>
+              </div>
+              <form action="">
+                <div class="pd-quantity">
+                  <div class="a-center">
+                    <span class="quantity">
+                      數量
+                    </span>
+                  </div>
+
+                  <div>
+                    <input class="quantity-input" type="number" value="1">
+                  </div>
+                </div>
+                <div class="cart-btn-g">
+                  <div class="cart-add btn">
+
+                    <i class="far fa-heart"></i>
+                    <a href="#">加入最愛</a>
+                  </div>
+                  <div class="cart-buy btn-b">
+                    <div class="cart-buy-btn">
+                      <button id="buy">
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="#">來去結帳</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail-content">
+          <div class="pd-g-row">
+            <div class="pd-g-tab">
+              <div class="pd-tab">詳細說明</div>
+              <!-- <div class="pd-tab">商品規格</div>
+              <div class="pd-tab">相關推薦</div> -->
+            </div>
+            <div class="pd-g-edit">
+              <div class="img">
+                <img src="img/iphone/iphone-detail/iphone-main.jpeg" alt="">
+                <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
+              </div>
+              <div class="pd-g-text">
+                <p>出色的防水技術-完全密封且可潛水，無論潛水，浮潛或遠足，都可以隨身攜帶Catalyst Case。<br>
+                  經過徹底測試，其浸沒深度可達33英尺（10m）。<br>
+                  清潔和消毒-遵循CDC準則</p>
+                <p>
+                  1-用肥皂和水清洗，以減少表面上的細菌，污垢和雜質的數量。<br>
+                  使用EPA清單N中列出的70％異丙醇或70％乙醇進行消毒：冠狀病毒消毒劑（COVID-19）
+                </p>
+                <p>
+                  2-已證明可在一分鐘的時間內顯著降低SARS-CoV-2等包膜病毒的感染性
+                  令人印象深刻的聲音和攝像頭-我們特別設計的True Sound聲學技術將麥克風和揚聲器隔離開來，從而增強了聲音。硬塗層光學相機鏡頭可以保護iPhone的鏡頭，而不會影響圖片質量。
+                </p>
+                <p>
+                  防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）<br>
+                  設計達到或超過MIL-STD 810G的跌落和衝擊 <br>
+                  使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護 <br>
+                  專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉 <br>
+                  QI和MagSafe無線充電兼容-讓您無需充電即可充電 <br>
+                  防水，防雪，防污，防沙-精密設計，可防止水，雪，防污，防沙進入設備<br>
+                  獲得專利的True Sound Acoustic Technology™<br>
+                  經典的附件提供了更多的防摔保護。<br>
+                  2個連接點-擴展功能和靈活性<br>
+                </p>
               </div>
             </div>
-          </form>
+            <div class="pd-g-same">
+              <div class="pd-g-title">
+                <p>相關推薦</p>
+              </div>
+              <div class="same-product img-g">
+                <div class="img">
+                  <img src="img/iphone/ip01.jpg" alt="">
+                </div>
+                <div class="img">
+                  <img src="img/iphone/ip02.jpg" alt="">
+                </div>
+                <div class="img">
+                  <img src="img/iphone/ip03.jpg" alt="">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="pd-g">
-        <div class="pd-g-tab">
-          <div class="pd-g-tab-act">詳細說明</div>
-          <div class="pd-g-tab-defult">商品規格</div>
-          <div class="pd-g-tab-defult">相關推薦</div>
-        </div>
-        <div class="pd-g-edit">
-          <div class="img">
-            <img src="img/pd-iphone-1-6.jpg" alt="">
-            <img src="img/pd-iphone-1-7.jpg" alt="">
-          </div>
-          <div class="pd-g-text">
-            <p>出色的防水技術-完全密封且可潛水，無論潛水，浮潛或遠足，都可以隨身攜帶Catalyst Case。<br>
-              經過徹底測試，其浸沒深度可達33英尺（10m）。清潔和消毒-遵循CDC準則</p>
-            <p>
-              1-用肥皂和水清洗，以減少表面上的細菌，污垢和雜質的數量。<br>
-              使用EPA清單N中列出的70％異丙醇或70％乙醇進行消毒：冠狀病毒消毒劑（COVID-19）
-            </p>
-            <p>
-              2-已證明可在一分鐘的時間內顯著降低SARS-CoV-2等包膜病毒的感染性
-              令人印象深刻的聲音和攝像頭-我們特別設計的True Sound聲學技術將麥克風和揚聲器隔離開來，從而增強了聲音。硬塗層光學相機鏡頭可以保護iPhone的鏡頭，而不會影響圖片質量。
-            </p>
-            <p>
-              防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）<br>
-              設計達到或超過MIL-STD 810G的跌落和衝擊 <br>
-              使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護 <br>
-              專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉 <br>
-              QI和MagSafe無線充電兼容-讓您無需充電即可充電 <br>
-              防水，防雪，防污，防沙-精密設計，可防止水，雪，防污，防沙進入設備<br>
-              獲得專利的True Sound Acoustic Technology™<br>
-              經典的附件提供了更多的防摔保護。<br>
-              2個連接點-擴展功能和靈活性<br>
-            </p>
-          </div>
-        </div>
-        <div class="pd-g-same">
-          <div class="pd-g-title">
-            <p>相關推薦</p>
-          </div>
-          <div class="img-g">
-            <div class="img">
-              <img src="img/pd-iphone-2.jpg" alt="">
-            </div>
-            <div class="img">
-              <img src="img/pd-iphone-3.jpg" alt="">
-            </div>
-            <div class="img">
-              <img src="img/pd-iphone-4.jpg" alt="">
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-
 
     </div>
   </div>
 
-
-
-  </div>
-  </div>
-  </div>
-
-
-  <footer class=" mt-90">
-    <div class="container row p-15 pt-60">
-      <div class="info-logo">
-        <img src="img/logo-w.svg" alt="">
-        <li>Woo 提供最優質的3C產品,<br>
-          給客戶最好的產品體驗</li>
-        <li>9F., No. 46, Fuxing Rd., Zhongli Dist., <br>
-          Taoyuan City 320061, Taiwan (R.O.C.)</li>
-        <li>+88634251108</li>
-        <li>woo3cshop@gmail.com</li>
-        <li>woo3cshop.com</li>
-
-
-      </div>
-      <div class="info">
-        <p class="p-title">關於我們</p>
-        <ul>
-          <li><a href="#">商店簡介</a> </li>
-          <li><a href="#">隱私權條款</a> </li>
-        </ul>
-        <p class="p-title">購物說明</p>
-        <ul>
-          <li><a href="#">付費方式</a> </li>
-          <li><a href="#">運送方式</a> </li>
-          <li><a href="#">退換貨方式</a> </li>
-        </ul>
-      </div>
-
-
-      <div class="info">
-
-        <p class="p-title">客服資訊</p>
-        <ul>
-          <li><a href="#">常見問題</a> </li>
-          <li><a href="#">會員權益</a> </li>
-        </ul>
-
-      </div>
-
-      <div class="info-fb">
-        <p class="p-title">Facebook粉絲團</p>
-        <div class="fb-page" data-href="https://www.facebook.com/Woo-3C-Shop-101678745398906" data-tabs="timeline"
-          data-width="220" data-height="190" data-small-header="true" data-adapt-container-width="true"
-          data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/Woo-3C-Shop-101678745398906" class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/Woo-3C-Shop-101678745398906">ZEN UIUX</a></blockquote>
-        </div>
-
-      </div>
-
-      <div class="info-line">
-        <p class="p-title">LINE粉絲圈</p>
-        <div class="line">
-          <img src="img/line-card.jpg" alt="">
+  <footer>
+    <div class="container footer-row">
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info">
+          <div class="info-logo">
+            <img src="img/logo-w.svg" alt="">
+          </div>
+          <ul>
+            <li>Woo 3C Shop提供最優質的3C產品, <br>
+              給客戶最好的產品體驗</li>
+          </ul>
+          <div class="address">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>
+              9F., No. 46, Fuxing Rd., Zhongli Dist.,<br>
+              Taoyuan City 320061, Taiwan (R.O.C.)
+            </span>
+          </div>
+          <div class="tel">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+            <span>
+              +886 - 903196184
+            </span>
+          </div>
+          <div class="email">
+            <i class="far fa-envelope" aria-hidden="true"></i>
+            <span>
+              woo3cshop@gmail.com
+            </span>
+          </div>
+          <div class="web">
+            <i class="fas fa-globe-asia" aria-hidden="true"></i>
+            <span>
+              woo3cshop.com
+            </span>
+          </div>
         </div>
       </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">關於我們</p>
+            <ul>
+              <li><a href="about.html">商店簡介</a> </li>
+              <li><a href="#">隱私權條款</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <!-- <div class="info-sitmap-about">
+            <p class="p-title">關於我們</p>
+            <ul>
+              <li><a href="about.html">商店簡介</a> </li>
+              <li><a href="#">隱私權條款</a> </li>
+            </ul>
+          </div> -->
+          <div class="info-sitmap-shipping">
+            <p class="p-title">購物說明</p>
+            <ul>
+              <li><a href="#">付費方式</a> </li>
+              <li><a href="#">運送方式</a> </li>
+              <li><a href="#">退換貨方式</a> </li>
+              <li><a href="#">常見問題</a> </li>
+              <li><a href="#">會員權益</a> </li>
+            </ul>
+          </div>
 
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">FACEBOOK粉絲頁</p>
+            <div class="fb-page" data-href="https://www.facebook.com/Woo-3C-Shop-101678745398906" data-tabs="timeline"
+              data-width="220" data-height="190" data-small-header="true" data-adapt-container-width="true"
+              data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Woo-3C-Shop-101678745398906" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/Woo-3C-Shop-101678745398906">ZEN UIUX</a></blockquote>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">LIND粉絲團</p>
+            <div class="line">
+              <img src="img/line-card.jpg" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
-    <div class="container row copyright">
+    <div class="container copyright">
       <div class="text">
         <p>Copyright 2021 WiEdu Co. ,Ltd.
           All rights reserved</p>
@@ -391,10 +586,79 @@
 
     </div>
 
+
+
+
   </footer>
-
-
-
 </body>
+<script>
+  var $res = document.querySelector('#res');
+  var $notice = document.querySelector('#notice');
+  var $buyBtn = document.querySelector('#buy');
+
+  init();
+
+  function init() {
+    if (!window.PaymentRequest) {
+      $notice.innerHTML = '不支援 PaymentRequest，請使用 Chrome 61（含）以上版本';
+      $notice.style.background = 'rgba(200, 0, 0, 0.2)';
+      return;
+    }
+    // $notice.innerHTML = '支援 PaymentRequest，請按購買按鈕繼續（此網頁僅供測試使用，不會儲存或是傳送任何相關資訊，也不會真的結帳扣款，但還是建議不要輸入真實資訊）';
+    $buyBtn.addEventListener('click', onClick);
+  }
+
+  function onClick() {
+    var request = createPaymentRequest();
+    request.show().then(function (PaymentResponse) {
+      handleResponse(PaymentResponse);
+    }).catch(function (err) {
+      console.log(err);
+    });
+  }
+
+  function showResponse(response) {
+    $res.innerHTML = JSON.stringify(response, undefined, 2);
+  }
+
+  function handleResponse(paymentResponse) {
+    // 可以在這裡把結果回傳 server
+    showResponse(paymentResponse);
+
+    // 模擬 API 的延遲
+    setTimeout(function () {
+      paymentResponse.complete("success");
+    }, 2000);
+  }
+
+  function createPaymentRequest() {
+    var methodData = [{
+      supportedMethods: ['basic-card'],
+      data: {
+        supportedNetworks: ['jcb', 'mastercard', 'visa'],
+        supportedTypes: ['debit', 'credit', 'prepaid']
+      },
+    }];
+    var details = {
+      displayItems: [
+        {
+          label: "CATALYST for iPhone12 Pro Max (3顆鏡頭) 完美四合一防水保護殼",
+          amount: { currency: "TWD", value: "390.00" }
+        },
+        // {
+        //   label: "早鳥優惠",
+        //   amount: { currency: "TWD", value: "-300.00" },
+        //   pending: true
+        // }
+      ],
+      total: {
+        label: "總額",
+        amount: { currency: "TWD", value: "390.00" }
+      }
+    };
+
+    return new PaymentRequest(methodData, details);
+  }
+</script>
 
 </html>
