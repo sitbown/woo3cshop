@@ -12,7 +12,6 @@
   <script src="https://kit.fontawesome.com/884c415745.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style-mod.css">
   <link rel="stylesheet" href="css/w3.css">
-  <script src="https://storage.googleapis.com/prshim/v1/payment-shim.js"></script>
 
 </head>
 
@@ -217,12 +216,16 @@
     </div>
   </header>
 
+  <!-- <div class="banner">
+    <img src="img/promo-banner.jpg" alt="">
+  </div> -->
+
   <div class="container">
     <div class="breadcrumb">
       <ul>
         <a href="index.html">首頁</a>
         <i class="fas fa-angle-right"></i>
-        <a href="#">產品介紹</a>
+        <a href="#">商品專區</a>
 
       </ul>
     </div>
@@ -231,7 +234,7 @@
   <div class="container">
 
     <div class="product-list-row">
-      <div class="sidebar-pd-g">
+      <div class="sidebar-pd-filter-g">
         <div class="sidebar-pd-filter">
           <div class="dropdown-list">
             <span class="show-all-dropdown">
@@ -242,19 +245,16 @@
               <li class="">
                 <a href="">
                   <span class="no-child" style="color: #3DA1FF;">防摔保護殼</span>
-
                 </a>
               </li>
               <li class="">
                 <a href="">
                   <span class="no-child">充電/傳輸線/放置架</span>
-
                 </a>
               </li>
               <li class="">
                 <a href="">
                   <span class="no-child">藍芽喇叭音響/耳機</span>
-
                 </a>
               </li>
             </ul>
@@ -316,235 +316,249 @@
         </div>
       </div>
 
-      <div class="product-detail-row">
-        <div class="product-detail-content">
-          <div class="product-detail-g">
-            <div class="product-detail-img">
-              <div class="product-img-g">
-                <div class="mySlides">
-                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                  <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                  <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-
-                <div class="row">
-                  <div class="column">
-                    <img class="demo cursor" src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%"
-                      onclick="currentSlide(1)" alt="The Woods">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%"
-                      onclick="currentSlide(2)" alt="Cinque Terre">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="img/iphone/iphone-detail/iphone-main.jpeg" style="width:100%"
-                      onclick="currentSlide(3)" alt="Mountains and fjords">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" style="width:100%"
-                      onclick="currentSlide(4)" alt="Northern Lights">
-                  </div>
-
-                </div>
-              </div>
-
-              <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("demo");
-                  var captionText = document.getElementById("caption");
-                  if (n > slides.length) { slideIndex = 1 }
-                  if (n < 1) { slideIndex = slides.length }
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex - 1].style.display = "block";
-                  dots[slideIndex - 1].className += " active";
-                  captionText.innerHTML = dots[slideIndex - 1].alt;
-                }
-              </script>
-              <!-- <div class="pd-img-g">
-                <div class="pd-img-big">
-                  <img src="img/iphone/iphone-detail/iphone-main.jpeg" alt="">
-                </div>
-                <div class="pd-img-sm-g">
-                  <div class="pd-img-sm">
-                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
-                  </div>
-                  <div class="pd-img-sm">
-                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
-                  </div>
-                  <div class="pd-img-sm">
-                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
-                  </div>
-                  <div class="pd-img-sm">
-                    <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
-                  </div>
-                </div>
-                
-              </div> -->
-            </div>
-
-            <div class="product-detail-desc">
-              <h1>CATALYST for iPhone12 Pro Max (3顆鏡頭) 完美四合一防水保護殼</h1>
-              <div class="pd-star">
-                <img src="img/star4.svg" alt="">
-              </div>
-              <br>
-              <nav>
-                <div class="li-g">
-                  <div class="li">
-                    <dot> • </dot>
-                    <p>
-                      防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）
-                    </p>
-                  </div>
-                </div>
-                <div class="li-g">
-                  <div class="li">
-                    <dot> • </dot>
-                    <p>
-                      設計達到或超過MIL-STD 810G的跌落和衝擊
-                    </p>
-                  </div>
-                </div>
-                <div class="li-g">
-                  <div class="li">
-                    <dot> • </dot>
-                    <p>
-                      使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護
-                    </p>
-                  </div>
-                </div>
-                <div class="li-g">
-                  <div class="li">
-                    <dot> • </dot>
-                    <p>
-                      專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉
-                    </p>
-                  </div>
-                </div>
-
-              </nav>
-              <div class="pd-dis-g-price">
-                <span class="price">金額</span>
-                <p>$ 390</p>
-              </div>
-              <form action="">
-                <div class="pd-quantity">
-                  <div class="a-center">
-                    <span class="quantity">
-                      數量
-                    </span>
-                  </div>
-
-                  <div>
-                    <input class="quantity-input" type="number" value="1">
-                  </div>
-                </div>
-                <div class="cart-btn-g">
-                  <div class="cart-add btn">
-
+      <div class="product-card-set">
+        <div class="product-list-g">
+          <div class="product-card">
+            <a href="product-detail.html">
+              <img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
                     <i class="far fa-heart"></i>
-                    <a href="#">加入最愛</a>
                   </div>
-                  <div class="cart-buy btn-b">
-                    <div class="cart-buy-btn">
-                      <button id="buy">
-                        <i class="fas fa-shopping-cart"></i>
-                        <a href="#">來去結帳</a>
-                      </button>
-                    </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="product-detail.html">
+              <img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#"><img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-1.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="product-card">
+            <a href="#">
+              <img src="img/iphone/ip01-2.jpg" alt="">
+              <div class="product-card-text">
+                <h3>耐衝擊硬式保護殼V2</h3>
+                <p class="fz12 gray81  t-justify">指定商品+加購區，可享加購區每件優惠價NT$1，折扣可循環累...</p>
+                <div class="pd-card-bottom">
+                  <div class="price">$390</div>
+                  <div class="icon-fav">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="pagination-g">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
           </div>
         </div>
-        <div class="product-detail-content">
-          <div class="pd-g-row">
-            <div class="pd-g-tab">
-              <div class="pd-tab">詳細說明</div>
-              <!-- <div class="pd-tab">商品規格</div>
-              <div class="pd-tab">相關推薦</div> -->
-            </div>
-            <div class="pd-g-edit">
-              <div class="img">
-                <img src="img/iphone/iphone-detail/iphone-main.jpeg" alt="">
-                <img src="img/iphone/iphone-detail/pd-iphone-1-1.jpg" alt="">
-              </div>
-              <div class="pd-g-text">
-                <p>出色的防水技術-完全密封且可潛水，無論潛水，浮潛或遠足，都可以隨身攜帶Catalyst Case。<br>
-                  經過徹底測試，其浸沒深度可達33英尺（10m）。<br>
-                  清潔和消毒-遵循CDC準則</p>
-                <p>
-                  1-用肥皂和水清洗，以減少表面上的細菌，污垢和雜質的數量。<br>
-                  使用EPA清單N中列出的70％異丙醇或70％乙醇進行消毒：冠狀病毒消毒劑（COVID-19）
-                </p>
-                <p>
-                  2-已證明可在一分鐘的時間內顯著降低SARS-CoV-2等包膜病毒的感染性
-                  令人印象深刻的聲音和攝像頭-我們特別設計的True Sound聲學技術將麥克風和揚聲器隔離開來，從而增強了聲音。硬塗層光學相機鏡頭可以保護iPhone的鏡頭，而不會影響圖片質量。
-                </p>
-                <p>
-                  防水至10m（33ft）-經測試達到或超過IP68防墜落高達2m（6.6ft）<br>
-                  設計達到或超過MIL-STD 810G的跌落和衝擊 <br>
-                  使用EPA批准的消毒劑可清洗和消毒-為您和您的設備提供全面保護 <br>
-                  專利旋轉靜音開關-即使戴手套轉靜音也變得輕而易舉 <br>
-                  QI和MagSafe無線充電兼容-讓您無需充電即可充電 <br>
-                  防水，防雪，防污，防沙-精密設計，可防止水，雪，防污，防沙進入設備<br>
-                  獲得專利的True Sound Acoustic Technology™<br>
-                  經典的附件提供了更多的防摔保護。<br>
-                  2個連接點-擴展功能和靈活性<br>
-                </p>
-              </div>
-            </div>
-            <div class="pd-g-same">
-              <div class="pd-g-title">
-                <p>相關推薦</p>
-              </div>
-              <div class="same-product img-g">
-                <div class="img">
-                  <img src="img/iphone/ip01.jpg" alt="">
-                </div>
-                <div class="img">
-                  <img src="img/iphone/ip02.jpg" alt="">
-                </div>
-                <div class="img">
-                  <img src="img/iphone/ip03.jpg" alt="">
-                </div>
-              </div>
 
-
-            </div>
-          </div>
-        </div>
       </div>
-
     </div>
+
   </div>
 
   <footer>
@@ -656,74 +670,5 @@
 
 
 </body>
-<script>
-  var $res = document.querySelector('#res');
-  var $notice = document.querySelector('#notice');
-  var $buyBtn = document.querySelector('#buy');
-
-  init();
-
-  function init() {
-    if (!window.PaymentRequest) {
-      $notice.innerHTML = '不支援 PaymentRequest，請使用 Chrome 61（含）以上版本';
-      $notice.style.background = 'rgba(200, 0, 0, 0.2)';
-      return;
-    }
-    // $notice.innerHTML = '支援 PaymentRequest，請按購買按鈕繼續（此網頁僅供測試使用，不會儲存或是傳送任何相關資訊，也不會真的結帳扣款，但還是建議不要輸入真實資訊）';
-    $buyBtn.addEventListener('click', onClick);
-  }
-
-  function onClick() {
-    var request = createPaymentRequest();
-    request.show().then(function (PaymentResponse) {
-      handleResponse(PaymentResponse);
-    }).catch(function (err) {
-      console.log(err);
-    });
-  }
-
-  function showResponse(response) {
-    $res.innerHTML = JSON.stringify(response, undefined, 2);
-  }
-
-  function handleResponse(paymentResponse) {
-    // 可以在這裡把結果回傳 server
-    showResponse(paymentResponse);
-
-    // 模擬 API 的延遲
-    setTimeout(function () {
-      paymentResponse.complete("success");
-    }, 2000);
-  }
-
-  function createPaymentRequest() {
-    var methodData = [{
-      supportedMethods: ['basic-card'],
-      data: {
-        supportedNetworks: ['jcb', 'mastercard', 'visa'],
-        supportedTypes: ['debit', 'credit', 'prepaid']
-      },
-    }];
-    var details = {
-      displayItems: [
-        {
-          label: "CATALYST for iPhone12 Pro Max (3顆鏡頭) 完美四合一防水保護殼",
-          amount: { currency: "TWD", value: "390.00" }
-        },
-        // {
-        //   label: "早鳥優惠",
-        //   amount: { currency: "TWD", value: "-300.00" },
-        //   pending: true
-        // }
-      ],
-      total: {
-        label: "總額",
-        amount: { currency: "TWD", value: "390.00" }
-      }
-    };
-
-    return new PaymentRequest(methodData, details);
-  }
-</script>
 
 </html>
