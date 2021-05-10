@@ -1039,7 +1039,7 @@ span.price, span.quantity{
 }
 
 .cart-buy-btn span, .cart-buy-btn i{
-  color: #fff;
+  color: #fff; 
 }
 
 .cart-buy-btn:hover{
