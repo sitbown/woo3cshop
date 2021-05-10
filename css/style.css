@@ -911,10 +911,11 @@ label {
   padding-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .sidebar-pd-g {
     width: 20%;
-    padding: 15px 15px 15px 0;
+    padding: 0 0 15px 0;
+    margin-right: 15px;
     display: block;
     height: auto;
   }
@@ -978,7 +979,7 @@ label {
 }
 
 .dropdown-list span.no-child {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .dropdown-list ul span {
@@ -1022,7 +1023,7 @@ label {
   box-shadow: 0px 3px 18px #77adff40;
   overflow: hidden;
   /* box-sizing: border-box; */
-  max-width: 206px;
+  max-width: 172px;
   padding: 0;
   margin: 10px;
   transition: .3s;
@@ -1070,7 +1071,7 @@ label {
     width: 720px;
   }
   .product-card {
-    max-width: 260px;
+    max-width: 250px;
   }
 }
 
@@ -1199,7 +1200,7 @@ label {
 .contactForm input {
   width: 100%;
   margin: 0;
-  border: 1px solid #818181;
+  border: 1px solid #81818100;
   font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1243,6 +1244,7 @@ label {
   .about-content-row {
     max-width: 78%;
     padding: 15px;
+    padding-top: 0;
   }
 }
 
