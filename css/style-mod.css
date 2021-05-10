@@ -839,9 +839,10 @@ footer {
   }
 }
 
+
 .product-detail-content{
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   margin: 15px 0;
   box-sizing: border-box;
   background-color: #fff;
@@ -850,6 +851,13 @@ footer {
   box-shadow: 0px 3px 18px #77adff40;
   display: flex;
 }
+
+@media screen and (min-width: 992px) {
+  .product-detail-content{
+  padding: 30px;
+  }
+}
+
 
 .product-detail-g{
   width: 100%;
