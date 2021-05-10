@@ -1221,6 +1221,12 @@ label {
   color: #818181;
 }
 
+
+.add>p, .tel>p, .email>p, .web>p {
+  display: flex;
+  color: #818181;
+}
+
 .company-info i {
   display: block;
   padding: 10px;
