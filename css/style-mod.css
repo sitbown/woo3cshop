@@ -152,6 +152,7 @@ span.psw {
   background-color: rgba(0, 0, 0, 0.5);
   /* Black w/ opacity */
   padding-top: 60px;
+  backdrop-filter: blur(5px);
 }
 
 /* Modal Content/Box */
