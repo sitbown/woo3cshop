@@ -1038,7 +1038,7 @@ span.price, span.quantity{
   color: #0078E9;
 }
 
-.cart-buy-btn a, .cart-buy-btn i{
+.cart-buy-btn span, .cart-buy-btn i{
   color: #fff;
 }
 
