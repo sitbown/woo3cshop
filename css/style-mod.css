@@ -832,8 +832,8 @@ footer {
 
 @media screen and (min-width: 992px) {
   .product-detail-row {
-    width: 80%;
-    padding: 0 15px;
+    width: 78%;
+    /* padding: 0 15px; */
     display: flex;
     flex-wrap: wrap;
   }
