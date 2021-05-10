@@ -1163,6 +1163,10 @@ label {
   display: none;
 }
 
+.contact-company{
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .contact-company {
     display: flex;

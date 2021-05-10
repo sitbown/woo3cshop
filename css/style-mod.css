@@ -49,10 +49,6 @@ section {
   flex: 3;
 }
 
-/* .nav-links {
-  flex: 2;
-} */
-
 .nav-logo {
   display: flex;
   align-items: center;
@@ -610,7 +606,7 @@ input.search {
   }
   .dropdown-link>a {
     background-color: transparent;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     padding: 1.2rem 2rem;
     line-height: 1;
   }
