@@ -843,7 +843,7 @@ footer {
 .product-detail-content{
   width: 100%;
   padding: 10px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   box-sizing: border-box;
   background-color: #fff;
   min-height: 300px;
@@ -855,6 +855,7 @@ footer {
 @media screen and (min-width: 992px) {
   .product-detail-content{
   padding: 30px;
+  margin: 15px 0;
   }
 }
 
